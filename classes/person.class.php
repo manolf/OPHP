@@ -2,25 +2,25 @@
 
 class Person
 {
-    // //Properties
-    // private $name;
-    // private $eyeColor;
-    // private $age;
+    //Properties
+    private $name;
+    private $eyeColor;
+    private $age;
 
-    // public static $drinkingAge = 21;
+    public static $drinkingAge = 21;
 
-    // //Constructor
-    // public function __construct($name, $eyeColor, $age)
-    // {
-    //     $this->name = $name;
-    //     $this->eyeColor = $eyeColor;
-    //     $this->age = $age;
-    // }
+    //Constructor
+    public function __construct($name, $eyeColor, $age)
+    {
+        $this->name = $name;
+        $this->eyeColor = $eyeColor;
+        $this->age = $age;
+    }
 
     //Chapter10
-    public $name;
-    public $eyeColor;
-    public $age;
+    // public $name;
+    // public $eyeColor;
+    // public $age;
 
     //Methods
     public function setName(string $newName)

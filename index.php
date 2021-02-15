@@ -77,15 +77,19 @@ include "./includes/autoloader.inc.php";
 
 
     //CHAPTER 9: Load Classes Automatically
-    // $person1 = new Person("Gustavo", "black", 33);
-    // echo $person1->getPerson();
+    // $autoload1 = myAutoLoader(Person); // use strtolower in autoloader.inc.php
+    // echo $autoload1 . "<br>";
+  
 
-    // echo "<br>";
+/*     $person1 = new Person("Gustavo", "black", 33);
+    echo $person1->getPerson();
 
-    // $house1 = new House("Highway to Hell", 12);
-    // echo $house1->getAddress();
+    echo "<br>";
 
-    //CHAPTER 10: Typedeclaration: setName(string $newName)
+    $house1 = new House("Highway to Hell", 12);
+    echo $house1->getAddress(); */
+
+    // CHAPTER 10: Typedeclaration: setName(string $newName)
     // $person1 = new Person();
 
     // try {
@@ -97,11 +101,68 @@ include "./includes/autoloader.inc.php";
 
 
     //CHAPTER 14: abstract classes 
-    include_once "abstract/paymenttypes.abstract.php";
-    include_once "classes/BuyProduct.class.php";
+    //no objects from this class
 
-    $buyProduct = new BuyProduct();
-    echo $buyProduct->getPayment();
+    // include_once "abstract/paymenttypes.abstract.php";
+    // include_once "classes/BuyProduct.class.php";
+
+    // $buyProduct = new BuyProduct();
+    // echo $buyProduct->getPayment();
+
+
+    //Chapter 15: anonymous classes
+
+    //Regular Class
+
+/*     include_once "classes/simpleclass.class.php";
+
+    $obj = new SimpleClass();
+    $obj->helloWorld();
+
+    //Anonymous class
+    //less heavy to load
+    $newObj = new class(){
+        public function helloWorld(){
+            echo "Hello World";
+        }
+    };
+
+    $newObj->helloWorld(); */
+
+
+    //Chapter 16: connection to DB with DPO
+    //protected: auch die erbenden Klassen können darauf zugreifen
+    // see dbh.class.php and test.class.php
+
+    //Chapter 17
+    //Query a Database: get and set
+
+/*     $testObj = new Test();
+    $testObj->getUsers();
+
+    echo "<hr>";
+
+    $testObj2 = new Test();
+    $testObj2->getUsersStmt("Daniel","Nielsen");
+
+    $testObj3 = new Test();
+    $testObj3->setUsersStmt("Manuela", "Damersdottir", "1978-09-14"); */
+
+
+    //Chapter 18: applying the mvc model 
+    // model file: users.class.php --> just database connections
+    // view file: usersview.class.php --> shows Information
+    // controller file: userscontr.class.php -> updates information
+    //split the testfile into these 3 files 
+
+    // $usersObj = new UsersView();
+    // $usersObj-> showUser("Manuela");
+
+    // $usersObj2 = new UsersContr();
+    // $usersObj2-> createUser("Cordula", "Grün", '1980-09-09');
+
+    //Chapter 19: 
+
 
 
     ?>
